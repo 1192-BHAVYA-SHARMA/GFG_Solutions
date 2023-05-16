@@ -1,0 +1,25 @@
+link: https://practice.geeksforgeeks.org/problems/selection-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=selection-sort
+question:Selection Sort
+class Solution
+{
+	void selectionSort(int arr[], int n)
+	{
+	   for(int i=0;i<n-1;i++){
+	       int l =n-i-1;
+	       int mx=getmaxind(arr,0,l);
+	       swap(arr,mx,l);
+	   }
+	}
+	static int getmaxind(int arr[],int s,int e){
+	    int mx =s;
+	    for(int i=s;i<=e;i++){
+	        if(arr[mx]<arr[i]){mx=i;}
+	    }
+	    return mx;
+	}
+	static void swap(int [] arr,int m,int l){
+	    int temp = arr[m];
+	    arr[m]=arr[l];
+	    arr[l]= temp;
+	}
+}
