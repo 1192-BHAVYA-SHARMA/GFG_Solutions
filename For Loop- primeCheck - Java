@@ -1,0 +1,16 @@
+https://practice.geeksforgeeks.org/problems/for-loop-primecheck-java/1
+class Geeks {
+    static void isPrime(int n) {
+        if(n==1){System.out.println("No");}
+        else{
+            int a =0;
+            for (int i = 2; i <= Math.sqrt(n); i++) {
+                if(n%i==0){
+                a+=1;}
+                
+            }
+        if(a==0){System.out.println("Yes");}
+        else{System.out.println("No");}
+        }
+    }
+}
