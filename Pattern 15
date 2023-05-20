@@ -1,0 +1,15 @@
+link: https://practice.geeksforgeeks.org/problems/triangle-pattern-1662285196/0
+
+
+class Solution {
+
+    void printTriangle(int n) {
+        for(int i=n;i>0;i--){
+            int ch=65;
+            for(int j=0;j<i;j++){
+                System.out.print((char)(ch+j));
+            }
+            System.out.println("");
+        }
+    }
+}
