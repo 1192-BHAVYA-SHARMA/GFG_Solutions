@@ -1,0 +1,20 @@
+link: https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/0
+
+
+class Solution{
+    //Function to find the leaders in the array.
+    static ArrayList<Integer> leaders(int arr[], int n){
+        ArrayList<Integer> ar =new ArrayList<Integer>();
+        ar.add(arr[n-1]);
+        int mx=arr[n-1];
+        for(int i=n-2;i>=0;i--){
+            if(arr[i]>=mx){
+               mx=arr[i]; 
+               ar.add(mx);
+            }
+        }
+        Collections.reverse(ar);
+        return ar;
+      
+    }
+}
