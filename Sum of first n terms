@@ -1,0 +1,17 @@
+link:https://practice.geeksforgeeks.org/problems/sum-of-first-n-terms5843/0
+
+
+// User function Template for Java
+
+class Solution {
+    long sumOfSeries(long N) {
+        // code here
+        long Sum =0;
+        if(N==1){ return 1;}
+        else{
+            
+            Sum=N*N*N+sumOfSeries(N-1);
+            return Sum;
+        }
+    }
+}
