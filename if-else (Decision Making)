@@ -1,0 +1,13 @@
+link: https://practice.geeksforgeeks.org/problems/java-if-else-decision-making0924/0
+
+//User function Template for Java
+class Solution{
+    static String compareNM(int n,int m){
+        // code here
+        String s ="";
+        if(n<m){ s+="lesser";}
+        else if(n==m){s+="equal";}
+        else{s+="greater";}
+        return s;
+    }
+}
