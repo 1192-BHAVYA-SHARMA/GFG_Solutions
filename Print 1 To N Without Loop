@@ -1,0 +1,16 @@
+link: https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/0
+//User function Template for Java
+
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+        //Your code here
+        if(N==1){System.out.print("1 ");}
+        else{
+            printNos(N-1);
+            System.out.print(N+" ");
+        }
+    }
+}
