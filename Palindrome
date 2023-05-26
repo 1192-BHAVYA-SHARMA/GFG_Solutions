@@ -1,0 +1,20 @@
+link:https://practice.geeksforgeeks.org/problems/palindrome0746/0
+
+//User function Template for Java
+
+class Solution
+{
+    public String is_palindrome(int n)
+    {
+        // Code here
+        int x=n;
+        int rev=0;
+        while(x!=0){
+            int dig=x%10;
+            rev=rev*10+dig;
+            x=x/10;
+        }
+        if(rev==n){return "Yes";}
+        else{return "No";}
+    }
+}
