@@ -1,0 +1,17 @@
+link: https://practice.geeksforgeeks.org/problems/element-appearing-once2552/0?company[]=Qualcomm&company[]=Qualcomm&difficulty[]=1&page=1&query=company[]Qualcommdifficulty[]1page1company[]Qualcomm&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=element-appearing-once
+
+//User function Template for Java
+
+class Sol
+{
+    public static int search(int A[], int N)
+    {
+        // your code here
+        // XOR all the elements:
+        int xorr = 0;
+        for (int i = 0; i < N; i++) {
+            xorr = xorr ^ A[i];
+        }
+        return xorr;
+    }
+}
